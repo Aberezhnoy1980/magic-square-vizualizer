@@ -85,8 +85,15 @@
     font-weight: 600;
 }
 
-.code-indent {
-    color: transparent;
+.code-comment {
+  color: #6a737d;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+.code-comment .code-indent {
+  color: #6a737d;
 }
 
 .code-explanation {

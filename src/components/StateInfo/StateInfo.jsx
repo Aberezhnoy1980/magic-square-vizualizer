@@ -45,7 +45,7 @@ const StateInfo = ({ currentNumber, currentRow, currentCol, currentStep, totalSt
 					</div>
 					<div className="variables-list">
 						<div className="variable-item">
-							<span className="variable-name">currentNumber:</span>
+							<span className="variable-name">number (аргумент функции):</span>
 							<span className="variable-value highlight">{currentNumber}</span>
 						</div>
 						<div className="variable-item">

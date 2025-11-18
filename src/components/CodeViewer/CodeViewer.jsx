@@ -30,8 +30,9 @@ const CodeViewer = ({ currentStep }) => {
 				<pre className="code-block">
 					<code className="c-code">
 						<div className="code-line">
-							<span className="code-keyword">void</span> <span className="code-function">fillMagicSquare</span>(<span className="code-type">int</span> size,
-							<span className="code-type">int</span> matrix[size][size]) {"{"}
+							<span className="code-keyword">void</span> <span className="code-function">fillMagicSquare</span>(<span className="code-type">int</span> number,
+							<span className="code-type"> int</span> size,
+							<span className="code-type"> int</span> matrix[size][size]) {"{"}
 						</div>
 
 						{C_CODE_SNIPPETS.map((snippet) => (
