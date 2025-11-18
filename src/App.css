@@ -1,0 +1,138 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  padding: 20px 15px 0;
+  flex-shrink: 0;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin: 8px 0 0 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.left-panel, .right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.right-panel {
+  gap: 12px;
+  min-height: 0;
+}
+
+.info-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  flex-shrink: 0;
+}
+
+.collapsible-section {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.section-header {
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.section-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-viewer, .matrix-grid, .extended-matrix-grid, .state-info, .explanation {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .app-main {
+    padding: 10px;
+  }
+
+  .left-panel, .right-panel {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 15px 10px 0;
+  }
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-header p {
+    font-size: 0.9rem;
+  }
+
+  .app-main {
+    padding: 8px;
+  }
+}

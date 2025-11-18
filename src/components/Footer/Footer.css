@@ -1,0 +1,119 @@
+.footer {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	padding: 25px 30px;
+	margin-top: auto;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.copyright {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.student-info {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.95em;
+	font-weight: 400;
+}
+
+.social-links {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.social-link {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: all 0.3s ease;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.social-link:hover {
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.social-icon {
+	width: 18px;
+	height: 18px;
+	opacity: 0.9;
+	transition: opacity 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+	opacity: 1;
+}
+
+.university {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.university-link {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: all 0.3s ease;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.university-icon {
+	width: 18px;
+	height: 18px;
+	opacity: 0.9;
+	transition: opacity 0.3s ease;
+}
+
+.university-link:hover {
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.university-link:hover .university-icon {
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	.footer-content {
+		flex-direction: column;
+		text-align: center;
+		gap: 12px;
+	}
+
+	.content {
+		padding: 30px 20px;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+}
+
+@media (max-width: 400px) {
+	.social-links {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
